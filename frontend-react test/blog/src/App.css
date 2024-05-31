@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+div {
+  box-sizing: border-box;
+
+} /* 모든 div 요소에 대해 박스 모델을 border-box로 설정하고. 
+padding과 border를 요소의 전체 너비와 높이에 포함시킨다. */
+
+.list {
+  padding-left: 20px; /* .list 클래스가 적용된 요소의 왼쪽에 20px의 패딩을 추가함 */
+  text-align: left; /* .list 클래스가 적용된 요소의 텍스트를 왼쪽으로 정렬함 */
+  border-bottom:1px solid grey; /* .list 클래스가 적용된 요소의 하단에 회색 실선 테두리를 추가함 */
+}
+.App-logo {
+  height: 40vmin; /* .App-logo 클래스가 적용된 요소의 높이를 뷰포트의 40%로 설정함 */
+  pointer-events: none; /* .App-logo 클래스가 적용된 요소에 마우스 이벤트가 발생하지 않도록 함 */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
